@@ -1,0 +1,44 @@
+<section class="page">
+    <app-header
+      [sectionTitle]="currentSection.title"
+      [selectedCount]="selectedCount"
+      [selectedTotal]="selectedTotal"
+    ></app-header>
+  
+    <div class="panel">
+      <nav class="sections">
+        <button
+          class="section"
+          [class.active]="currentSectionId === 'type1'"
+          (click)="setSection('type1')"
+        >
+          Тип 1
+        </button>
+  
+        <button
+          class="section"
+          [class.active]="currentSectionId === 'type2'"
+          (click)="setSection('type2')"
+        >
+          Тип 2
+        </button>
+      </nav>
+  
+      <div class="items">
+        <label class="row" *ngFor="let item of items">
+          <input
+            class="cb"
+            type="checkbox"
+            [checked]="isSelected(item.id)"
+            (change)="toggle(item, $any($event.target).checked)"
+          />
+          <div class="text">
+            <div class="name">{{ item.title }}</div>
+            <div class="val">Value: {{ item.value }}</div>
+          </div>
+        </label>
+      </div>
+    </div>
+  
+    <a class="back" routerLink="/">Вернуться назад</a>
+  </section>

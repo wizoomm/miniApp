@@ -1,0 +1,39 @@
+.wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 64px;
+    gap: 18px;
+  }
+  
+  .lead {
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 200px;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: var(--cream);
+    font-weight: 900;
+  }
+  
+  .btn {
+    width: fit-content;
+    background: var(--cream);
+    color: var(--text-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 14px 22px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    filter: brightness(0.98);
+  }

@@ -1,0 +1,23 @@
+.bar {
+    background: var(--cream);
+    color: var(--text-blue);
+    border-radius: var(--radius);
+    padding: 18px 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .left {
+    justify-self: start;
+  }
+  
+  .center {
+    justify-self: center;
+  }
+  
+  .right {
+    justify-self: end;
+  }
